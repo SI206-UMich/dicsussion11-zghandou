@@ -66,6 +66,9 @@ def add_pets_from_json(filename, cur, conn):
     cur.execute("INSERT INTO Patients (pet_id ,name,\
         species_id , age, cuteness, aggressiveness)VALUES(?,?,?,?,?,?)",("0","Fluffie","0","3","90","100"))
     conn.commit()
+
+    for i in json_data: 
+        pass 
    
 
     
